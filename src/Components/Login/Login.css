@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  padding: 8px;
+  border: 2px solid black;
+  height: fit-content;
+  width: 330px;
+  border-radius: 2em;
+  background: rgba(231, 231, 231, 0.233);
+}
+
+.h1{
+  
+}
+
+.login-form{
+    margin: 15px;
+    padding: 25px;
+}
+
+.btnSubmit{
+    border: 1px solid black;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    margin-left: 25%;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 3px;
+    padding:2px;
+}
+.user{
+  display: grid;
+  justify-content :center;
+  align-items: center;
+  margin: 5px;
+  padding: 8px;
+}
+
+.password{
+  display: grid;
+  justify-content :center;
+  align-items: center;
+  margin: 5px;
+  padding: 8px;
+}
