@@ -4,7 +4,6 @@
   align-items: center;
 }
 
-
 .login-container {
   display: grid;
   justify-content: center;
@@ -15,45 +14,62 @@
   height: fit-content;
   width: 330px;
   border-radius: 2em;
-  background: rgba(231, 231, 231, 0.233);
+  background: rgba(255, 255, 255, 0.689);
 }
 
-.h1{
-  
+.h1 {
+  color: #1da1f2;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 50px;
+  font-weight: 500;
 }
 
-.login-form{
-    margin: 15px;
-    padding: 25px;
+.login-form {
+  margin: 15px;
+  padding: 25px;
 }
 
-.btnSubmit{
-    border: 1px solid black;
-    width: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8px;
-    margin-left: 25%;
-    margin-top: 16px;
-    border-radius: 5px;
+.btnSubmit {
+  outline: none;
+  width: 75px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  margin-left: 25%;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-image: radial-gradient(circle, #000000, #19010f, #22041f, #220934, #06134e);
+  color: whitesmoke;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #879aed7b;
+  transition: 0.4s ease;
 }
 
-.btn{
-    margin: 3px;
-    padding:2px;
+.btnSubmit:hover{
+  transform: scale(1);
+  box-shadow: none;
+  background: linear-gradient(to right, rgb(108, 255, 108) ) ;
 }
-.user{
+
+.btn {
+  margin: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: bold;
+}
+.user {
   display: grid;
-  justify-content :center;
+  justify-content: center;
   align-items: center;
   margin: 5px;
   padding: 8px;
 }
 
-.password{
+.password {
   display: grid;
-  justify-content :center;
+  justify-content: center;
   align-items: center;
   margin: 5px;
   padding: 8px;

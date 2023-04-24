@@ -45,14 +45,14 @@ const Login = () => {
   return (
     <div className="container">
       <div className="login-container">
-        <h1 className="h1" >Login </h1>
+        <h1 className="h1">LogIn </h1>
         <form action="" className="login-form" onSubmit={FormSubmitHandler}>
           <div className="user">
             <label
               htmlFor=""
-              style={{ margin: "3px", padding: "5px", fontSize: "20px" }}
+              style={{ margin: "3px", padding: "5px", fontSize: "20px", fontWeight:"600" }}
             >
-              UserName or Email
+              Username or Email
             </label>
             <div>
               <input
@@ -61,16 +61,16 @@ const Login = () => {
                 name="userName"
                 placeholder="User..."
                 onChange={FormChangeHandler}
-                style={{ margin: "3px", padding: "5px", height: "50px" }}
+                style={{ margin: "3px", padding: "5px", height: "50px", background: "rgba(232, 232, 232, 0.397)", borderRadius:"8px"   }}
               />
-              <ToastContainer style={{ height: "20px", width: "20px" }} />
+              <ToastContainer style={{ height: "20px", width: "20px" }} limit={1} />
             </div>
           </div>
 
           <div className="password">
             <label
               htmlFor=""
-              style={{ margin: "3px", padding: "5px", fontSize: "20px" }}
+              style={{ margin: "3px", padding: "5px", fontSize: "20px" , fontWeight:"600"}}
             >
               Password
             </label>
@@ -81,15 +81,15 @@ const Login = () => {
                 value={formSubmit.pass}
                 placeholder="password..."
                 onChange={FormChangeHandler}
-                style={{ margin: "3px", padding: "5px", height: "50px" }}
+                style={{ margin: "3px", padding: "5px", height: "50px" , background: "rgba(232, 232, 232, 0.397)", borderRadius:"8px"}}
               />
-              <ToastContainer style={{ height: "20px", width: "20px" }} />
+              <ToastContainer style={{ height: "20px", width: "20px" }} limit={1}/>
             </div>
           </div>
 
           <div className="btnSubmit">
-            <button className="btn" type="submit" onClick={LoginForm}>
-              submit
+            <button className="btn" type="submit"  onClick={LoginForm}>
+              Submit
             </button>
           </div>
         </form>
