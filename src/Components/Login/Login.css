@@ -44,13 +44,13 @@
   background-image: radial-gradient(circle, #000000, #19010f, #22041f, #220934, #06134e);
   color: whitesmoke;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #879aed7b;
-  transition: 0.4s ease;
+  transition: 0.8s ease;
 }
 
 .btnSubmit:hover{
   transform: scale(1);
   box-shadow: none;
-  background: linear-gradient(to right, rgb(108, 255, 108) ) ;
+  background: linear-gradient(to right, rgb(108, 255, 108) 20%,rgb(108, 255, 108) 80%  ) ;
 }
 
 .btn {

@@ -38,7 +38,7 @@ const Login = () => {
         position: "top-center",
       });
     } else {
-      console.log("LoggedIn", userName, pass);
+      console.log("LoggedIn");
     }
   };
 
@@ -50,7 +50,12 @@ const Login = () => {
           <div className="user">
             <label
               htmlFor=""
-              style={{ margin: "3px", padding: "5px", fontSize: "20px", fontWeight:"600" }}
+              style={{
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
             >
               Username or Email
             </label>
@@ -61,16 +66,30 @@ const Login = () => {
                 name="userName"
                 placeholder="User..."
                 onChange={FormChangeHandler}
-                style={{ margin: "3px", padding: "5px", height: "50px", background: "rgba(232, 232, 232, 0.397)", borderRadius:"8px"   }}
+                style={{
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
-              <ToastContainer style={{ height: "20px", width: "20px" }} limit={1} />
+              <ToastContainer
+                style={{ height: "20px", width: "20px" }}
+                limit={1}
+              />
             </div>
           </div>
 
           <div className="password">
             <label
               htmlFor=""
-              style={{ margin: "3px", padding: "5px", fontSize: "20px" , fontWeight:"600"}}
+              style={{
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
             >
               Password
             </label>
@@ -81,14 +100,23 @@ const Login = () => {
                 value={formSubmit.pass}
                 placeholder="password..."
                 onChange={FormChangeHandler}
-                style={{ margin: "3px", padding: "5px", height: "50px" , background: "rgba(232, 232, 232, 0.397)", borderRadius:"8px"}}
+                style={{
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
-              <ToastContainer style={{ height: "20px", width: "20px" }} limit={1}/>
+              <ToastContainer
+                style={{ height: "20px", width: "20px" }}
+                limit={1}
+              />
             </div>
           </div>
 
           <div className="btnSubmit">
-            <button className="btn" type="submit"  onClick={LoginForm}>
+            <button className="btn" type="submit" onClick={LoginForm}>
               Submit
             </button>
           </div>
