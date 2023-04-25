@@ -51,6 +51,7 @@ const Login = () => {
             <label
               htmlFor=""
               style={{
+                background: "transparent",
                 margin: "3px",
                 padding: "5px",
                 fontSize: "20px",
@@ -85,6 +86,7 @@ const Login = () => {
             <label
               htmlFor=""
               style={{
+                background: "transparent",
                 margin: "3px",
                 padding: "5px",
                 fontSize: "20px",

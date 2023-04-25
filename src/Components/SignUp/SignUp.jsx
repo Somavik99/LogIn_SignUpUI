@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import "./SignUp.css";
 
 const SignUp = () => {
   const [UserInput, setUserInput] = useState({
@@ -9,7 +10,7 @@ const SignUp = () => {
     conPass: "",
   });
 
-const [StoreData,setStoreData] = useState([]);
+  const [StoreData, setStoreData] = useState([]);
 
   const userRegex = new RegExp(
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,24}/
@@ -37,13 +38,17 @@ const [StoreData,setStoreData] = useState([]);
       toast.error(" ", {
         position: "top-center",
       });
+     console.alert("Enter valid password");
     } else if (conPass !== pass) {
       toast.error(" ", {
         position: "top-center",
       });
     } else {
-      localStorage.setItem("SignUpInfo", JSON.stringify([...StoreData,UserInput]))
-      setStoreData()
+      localStorage.setItem(
+        "SignUpInfo",
+        JSON.stringify([...StoreData, UserInput])
+      );
+      setStoreData();
       console.log("SignedUp");
     }
   };
@@ -62,9 +67,21 @@ const [StoreData,setStoreData] = useState([]);
   return (
     <div className="Container">
       <div className="SignUpContainer">
+        <h1 className="h1">SignUp</h1>
         <form action="" className="SignUpForm" onSubmit={HandleSignUpSubmit}>
           <div className="userName">
-            <label htmlFor="">User Name</label>
+            <label
+              htmlFor=""
+              style={{
+                background: "transparent",
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
+            >
+              User Name
+            </label>
             <div>
               <input
                 type="text"
@@ -72,6 +89,14 @@ const [StoreData,setStoreData] = useState([]);
                 placeholder="Username..."
                 value={UserInput.uName}
                 onChange={SignUpInputChange}
+                style={{
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  width:"300px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
               <ToastContainer
                 style={{ height: "20px", width: "20px" }}
@@ -80,7 +105,18 @@ const [StoreData,setStoreData] = useState([]);
             </div>
           </div>
           <div className="Email">
-            <label htmlFor="">Email</label>
+            <label
+              htmlFor=""
+              style={{
+                background: "transparent",
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
+            >
+              Email
+            </label>
             <div>
               <input
                 type="email"
@@ -88,6 +124,15 @@ const [StoreData,setStoreData] = useState([]);
                 placeholder="Email..."
                 value={UserInput.eMail}
                 onChange={SignUpInputChange}
+                style={{
+                  
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  width:"300px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
               <ToastContainer
                 style={{ height: "20px", width: "20px" }}
@@ -96,7 +141,18 @@ const [StoreData,setStoreData] = useState([]);
             </div>
           </div>
           <div className="Pass">
-            <label htmlFor="">Password</label>
+            <label
+              htmlFor=""
+              style={{
+                background: "transparent",
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
+            >
+              Password
+            </label>
             <div>
               <input
                 type="password"
@@ -104,6 +160,14 @@ const [StoreData,setStoreData] = useState([]);
                 placeholder="Password..."
                 value={UserInput.pass}
                 onChange={SignUpInputChange}
+                style={{
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  width:"300px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
               <ToastContainer
                 style={{ height: "20px", width: "20px" }}
@@ -112,7 +176,18 @@ const [StoreData,setStoreData] = useState([]);
             </div>
           </div>
           <div className="cPass">
-            <label htmlFor="">Confirm Password</label>
+            <label
+              htmlFor=""
+              style={{
+                background: "transparent",
+                margin: "3px",
+                padding: "5px",
+                fontSize: "20px",
+                fontWeight: "600",
+              }}
+            >
+              Confirm Password
+            </label>
             <div>
               <input
                 type="password"
@@ -120,6 +195,14 @@ const [StoreData,setStoreData] = useState([]);
                 placeholder="Confirm Password..."
                 value={UserInput.conPass}
                 onChange={SignUpInputChange}
+                style={{
+                  margin: "3px",
+                  padding: "5px",
+                  height: "50px",
+                  width:"300px",
+                  background: "rgba(232, 232, 232, 0.397)",
+                  borderRadius: "8px",
+                }}
               />
               <ToastContainer
                 style={{ height: "20px", width: "20px" }}
@@ -127,8 +210,8 @@ const [StoreData,setStoreData] = useState([]);
               />
             </div>
           </div>
-          <div>
-            <button type="submit" onClick={SignUpFomSubmit}>
+          <div className="btnSubmit">
+            <button type="submit" className="btn" onClick={SignUpFomSubmit}>
               SignUp
             </button>
           </div>

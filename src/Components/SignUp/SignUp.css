@@ -1,0 +1,97 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    padding: 8px;
+    border: 2px solid black;
+    height: fit-content;
+    width: 530px;
+    border-radius: 2em;
+    background: rgba(255, 255, 255, 0.689);
+}
+
+.h1 {
+    color: #1da1f2;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .SignUpForm{
+    margin: 15px;
+    padding: 25px;
+  }
+
+  .btnSubmit{
+    outline: none;
+    width: 75px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    margin-left: 25%;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-image: radial-gradient(circle, #000000, #19010f, #22041f, #220934, #06134e);
+    color: whitesmoke;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #879aed7b;
+    transition: 0.8s ease;
+  }
+
+  .btnSubmit:hover{
+    transform: scale(1);
+    box-shadow: none;
+    background: linear-gradient(to right, rgb(108, 255, 108) 20%,rgb(108, 255, 108) 80%  ) ;
+  }
+
+  .btn{
+    margin: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+  }
+
+  .userName{
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .Email{
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .Pass{
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .cPass{
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 8px;
+  }
