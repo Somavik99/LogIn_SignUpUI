@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import Cards from "./Cards/Cards";
+import "./Products.css"
 
 const Products = () => {
   const [ProductsState, setProductsState] = useState([]);
@@ -10,8 +11,8 @@ const Products = () => {
     await axios
       .get(`https://dummyjson.com/products`)
       .then((resp) => {
-        console.log(resp.data);
-        setProductsState(resp.data);
+        console.log(resp.data.products);
+        setProductsState(resp.data.products);
       })
       .catch((err) => {
         console.log(err);
@@ -23,11 +24,23 @@ const Products = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="cContainer">
+      <div className="Card_Contains">
       {ProductsState.map((prod, index) => {
-        return <Cards  />;
+        return (
+          <Cards
+            key={index}
+            title={prod.title}
+            images={prod.thumbnail}
+            price={prod.price}
+            brand={prod.brand}
+            rating={prod.rating}
+            inStock={prod.stock}
+            prodDetails={prod.description}
+          />
+        );
       })}
+      </div>
     </div>
   );
 };

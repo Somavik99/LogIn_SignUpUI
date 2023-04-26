@@ -1,0 +1,11 @@
+.Crads-view{
+margin: 6px auto;
+overflow: scroll;
+border: 0.8px solid rgba(194, 191, 191, 0.659);
+}
+
+.Crads-view::-webkit-scrollbar{
+    width: 0.05em;
+}
+
+

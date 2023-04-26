@@ -1,0 +1,9 @@
+.Card_Contains{
+    margin: 8%;
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(200, 199, 199);
+}
